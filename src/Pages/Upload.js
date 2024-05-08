@@ -56,11 +56,11 @@ const Upload = () => {
         <div>
             <Header></Header>
 
-            <section class="inner_page_head">
-                <div class="container_fuild">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="full">
+            <section className="inner_page_head">
+                <div className="container_fuild">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="full">
                                 <h3>Upload Image</h3>
                             </div>
                         </div>
@@ -68,20 +68,20 @@ const Upload = () => {
                 </div>
             </section>
 
-            <section class="why_section layout_padding">
-                <div class="container">
+            <section className="why_section layout_padding">
+                <div className="container">
 
-                    <div class="row">
-                        <div class="col-lg-8 offset-lg-2">
-                            <div class="full">
+                    <div className="row">
+                        <div className="col-lg-8 offset-lg-2">
+                            <div className="full">
                                 <form >
                                     <fieldset>
                                         <label> Image Content </label>
-                                        {formError.Name && <span class="form_error"> * Required</span>}
+                                        {formError.Name && <span className="form_error"> * Required</span>}
                                         <input id="Name" type='text' placeholder='type here' onChange={valueFromInput}></input>
 
                                         <label>Upload Your Image Here : </label>
-                                        {formError.Image && <span class="form_error"> * Required</span>}
+                                        {formError.Image && <span className="form_error"> * Required</span>}
                                         <input id="Image" type="file" file="file" accept='.png, .jpg, .jpeg' required onChange={imageUpload} />
 
                                     </fieldset>

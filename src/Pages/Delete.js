@@ -37,17 +37,17 @@ const Delete = () => {
 
     const output = storeValue.map((value, index) => {
         return (
-            <div class="col-sm-6 col-md-4 col-lg-4" key={index}>
-                <div class="box">
-                    <div class="option_container">
-                        <div class="options">
-                            <button href="" class="btn btn-outline-danger" onClick={() => deleteImage(value.id)}> Delete </button>
+            <div className="col-sm-6 col-md-4 col-lg-4" key={index}>
+                <div className="box">
+                    <div className="option_container">
+                        <div className="options">
+                            <button href="" className="btn btn-outline-danger" onClick={() => deleteImage(value.id)}> Delete </button>
                         </div>
                     </div>
-                    <div class="img-box">
+                    <div className="img-box">
                         <img src={value.Image} alt="Gallery"></img>
                     </div>
-                    <div class="detail-box">
+                    <div className="detail-box">
                         <h5>
                             {value.Name}
                         </h5>
@@ -62,11 +62,11 @@ const Delete = () => {
         <div>
             <Header></Header>
 
-            <section class="inner_page_head">
-                <div class="container_fuild">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="full">
+            <section className="inner_page_head">
+                <div className="container_fuild">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="full">
                                 <h3>Delete Image</h3>
                             </div>
                         </div>
@@ -74,9 +74,9 @@ const Delete = () => {
                 </div>
             </section>
 
-            <section class="product_section layout_padding">
-                <div class="container">
-                    <div class="row">
+            <section className="product_section layout_padding">
+                <div className="container">
+                    <div className="row">
                         {output}
                     </div>
                 </div>

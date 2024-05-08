@@ -24,13 +24,13 @@ const Gallery = () => {
 
     const output = storeValue.map((value, index) => {
         return (
-            <div class="col-sm-6 col-md-4 col-lg-4" key={index}>
-                <div class="box">
+            <div className="col-sm-6 col-md-4 col-lg-4" key={index}>
+                <div className="box">
 
-                    <div class="img-box">
+                    <div className="img-box">
                         <img src={value.Image} alt="Gallery"></img>
                     </div>
-                    <div class="detail-box">
+                    <div className="detail-box">
                         <h5>
                             {value.Name}
                         </h5>
@@ -46,14 +46,14 @@ const Gallery = () => {
         <div>
             <Header></Header>
 
-            <section class="product_section layout_padding">
-                <div class="container">
-                    <div class="heading_container heading_center">
+            <section className="product_section layout_padding">
+                <div className="container">
+                    <div className="heading_container heading_center">
                         <h2>
                             <span>Gallery</span>
                         </h2>
                     </div>
-                    <div class="row">
+                    <div className="row">
                         {output}
                     </div>
                 </div>

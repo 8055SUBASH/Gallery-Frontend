@@ -10,15 +10,15 @@ const Header = () => {
 
     return (
         <div>
-            <header class="header_section">
-                <div class="container">
-                    <nav class="navbar navbar-expand-lg custom_nav-container ">
-                        <a class="navbar-brand" href="index.html"><img width="250" src={require("../Image/header-logo.png")} alt="#" /></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={() => menuButton()}>
-                            <span class=""> </span>
+            <header className="header_section">
+                <div className="container">
+                    <nav className="navbar navbar-expand-lg custom_nav-container ">
+                        <a className="navbar-brand" href="index.html"><img width="250" src={require("../Image/header-logo.png")} alt="#" /></a>
+                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={() => menuButton()}>
+                            <span className=""> </span>
                         </button>
-                        <div class={menu ? "navbar-collapse" : "collapse navbar-collapse"} id="navbarSupportedContent">
-                            <ul class="navbar-nav">
+                        <div className={menu ? "navbar-collapse" : "collapse navbar-collapse"} id="navbarSupportedContent">
+                            <ul className="navbar-nav">
                                 <NavLink to="/" className="nav-item"><a href="index.html" className="nav-link">Home</a></NavLink>
                                 <NavLink to="/gallery" className="nav-item"><a href="gallery.html" className="nav-link">Gallery</a></NavLink>
                                 <NavLink to="/upload" className="nav-item"><a href="upload.html" className="nav-link">Upload</a></NavLink>
